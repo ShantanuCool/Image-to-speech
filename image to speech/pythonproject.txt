@@ -1,0 +1,38 @@
+Pytesseract: Python-tesseract is an optical character recognition (OCR) tool for python. That is, it will recognize and “read” the text embedded in images.
+		Python-tesseract is a wrapper for Google’s Tesseract-OCR Engine. It is also useful as a stand-alone invocation script to tesseract, as it can read all image 
+		types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others.
+		 Additionally, if used as a script, Python-tesseract will print the recognized text instead of writing it to a file.
+	Fuctions of pytesseract:
+				get_languages: Returns all currently supported languages by Tesseract OCR.
+				get_tesseract_version :Returns the Tesseract version installed in the system.
+				image_to_string :Returns unmodified output as string from Tesseract OCR processing
+				image_to_boxes :Returns result containing recognized characters and their box boundaries
+				image_to_data: Returns result containing box boundaries, confidences, and other information. Requires Tesseract 3.05+. For more information, please check the Tesseract TSV documentation
+				image_to_osd :Returns result containing information about orientation and script detection.
+				image_to_alto_xml :Returns result in the form of Tesseract’s ALTO XML format.
+				run_and_get_output :Returns the raw output from Tesseract OCR. Gives a bit more control over the parameters that are sent to tesseract.
+	Parameters: 
+			image Object or String - PIL Image/NumPy array or file path of the image to be processed by Tesseract. If you pass object instead of file path, 
+						pytesseract will implicitly convert the image to RGB mode.
+			lang String - Tesseract language code string. Defaults to eng if not specified! Example for multiple languages: lang='eng+fra'
+
+googletrans: Googletrans is a free and unlimited python library that implemented Google Translate API. Python googletrans is a module to translate text. 
+		It uses the Google Translate Ajax API(application programming interface) to detect langauges and translate text.
+
+		Compatible with Python 3.6+.
+		We import the Translator, which is used to do translations.
+
+gTTS: gTTS (Google Text-to-Speech), a Python library and CLI tool to interface with Google Translate's text-to-speech API.
+	parameters: text (string) – The text to be read.
+			lang (string, optional) – The language (IETF language tag) to read the text in. Default is en.
+			slow (bool, optional) – Reads text more slowly. Defaults to False.
+
+OS: 	This module provides a portable way of using operating system dependent functionality.
+
+PIL(Python Imaging Library): The Python Imaging Library adds image processing capabilities to your Python interpreter.
+				This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.
+
+Image Module: The module also provides a number of factory functions, including functions to load images from files, and to create new images.
+		this function identifies the file, but the file remains open and the actual image data is not read from the file until you 
+		try to process the data (or call the load() method).
+		Returns an Image object
